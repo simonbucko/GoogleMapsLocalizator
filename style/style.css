@@ -192,24 +192,28 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
+  cursor: pointer;
 }
 
 .warning-content {
   background-color: white;
   padding: 30px;
   position: relative;
-  max-width: 600px;
+  width: 450px;
+  height: 350px;
+  border-radius: 36px;
+  cursor: auto;
 }
 
 .warning-content h3 {
   text-align: center;
-  font-size: 60px;
+  font-size: 48px;
   margin-top: 1px;
 }
 
 .closeButton {
   position: absolute;
-  font-size: 50px;
+  font-size: 33px;
   margin: auto;
   right: 20px;
   top: 20px;
@@ -222,6 +226,6 @@ body {
 }
 
 .warningParagraph {
-  font-size: 30px;
+  font-size: 24px;
   text-align: justify;
 }

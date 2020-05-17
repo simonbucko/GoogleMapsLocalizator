@@ -117,7 +117,7 @@ function searchStores() {
   var foundStores = [];
   var zipCode = document.getElementById('zip-code-input').value;
   let zipCodeNumber;
-  if (zipCode) zipCodeNumber = parseInt(zipCode.match(/\d/g).join(''), 10);
+  if (zipCode.length == 5) zipCodeNumber = parseInt(zipCode.match(/\d/g).join(''), 10);
   if (zipCode.length == 5 && zipCodeNumber >= 10000 && zipCodeNumber < 100000) {
     for (var store of stores) {
       var postal = store['address']['postalCode'].substring(0, 5);
